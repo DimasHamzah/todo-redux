@@ -1,13 +1,11 @@
 import {useState} from "react";
 
 export default function ModalAddTodo({ isOpen, openModal, onCreateTodo }) {
-    const [title, setTitle] = useState();
-    const [description, setDescription] = useState();
 
     return (
         isOpen && (
             <div
-                className={`transition-all duration-1000 ease-in-out mx-auto backdrop-blur overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full 
+                className={`transition-all transform duration-1000 ease-in-out mx-auto backdrop-blur overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full 
                 ${isOpen ? 'translate-y-0' : 'translate-y-full'}`}>
                 <div className="relative p-4 w-full max-w-md max-h-full">
                     <div className="relative bg-white rounded-lg shadow dark:bg-gray-700">

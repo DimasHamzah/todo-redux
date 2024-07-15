@@ -18,7 +18,6 @@ function App() {
     }, [dispatch]);
 
     const openModalClick = () => {
-        console.log(modal);
         dispatch(receiveModalActionCreator(!modal));
     }
 
@@ -39,7 +38,6 @@ function App() {
                   ))
               }
           </section>
-          <h1>testing</h1>
           <ModalAddTodo openModal={openModalClick} isOpen={modal} onCreateTodo={onCreateTodo} />
       </main>
   );
